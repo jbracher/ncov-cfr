@@ -80,7 +80,7 @@ jags.mod <- function(){
   cfr ~ dunif(0, 1) # "uninformative" prior
 
   # prior on rate parameter of gamma distribution describing time to death
-  # see below for elicitation
+  # see separate file for elicitation
   # use a transformed parameter for which a symetrical prior is reasonable
   death_rate_trafo ~ dnorm(9.2, 1.355^(-2))
   death_rate = death_rate_trafo^(-0.5)
